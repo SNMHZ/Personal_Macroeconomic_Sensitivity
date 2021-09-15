@@ -48,13 +48,9 @@ class MultiRNNModel(nn.Module):
         self.lstm_layerm4 = nn.LSTM(seq_len, seq_len)
 
         self.classifier = nn.Sequential(
-            nn.Linear(classifier_size, int(classifier_size*1.5)), 
+            nn.Linear(classifier_size, classifier_size//2), 
             nn.ReLU(),
-            nn.Linear(int(classifier_size*1.5), int(classifier_size*1.5)), 
-            nn.ReLU(),
-            nn.Linear(int(classifier_size*1.5), classifier_size), 
-            nn.ReLU(),
-            nn.Linear(classifier_size, toPredict_size),
+            nn.Linear(classifier_size//2, toPredict_size),
             nn.Sigmoid()
         )
 
