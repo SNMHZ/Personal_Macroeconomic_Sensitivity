@@ -24,5 +24,5 @@ _리포지토리의 코드는 pytorch로 구현한 분류 모델입니다.<br> �
 
 #### 최종 결과
  - 장려상
-    > <img src="./documents/img/img1.png"  width="500" height="350">
+    > <img src="./documents/img/img1.png"  width="50%">
  - [후기](https://snmhz.github.io/daegu-bigdata-competition-2021)
